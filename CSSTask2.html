@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Task-2</title>
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+            width: 200px;
+            background-color: lightskyblue ;
+            border: 1px solid black;
+            background-clip: content-box;
+        }
+        li a{
+            display: block;
+            color: blue;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        li a:hover{
+            background-color: orange;
+            color: white;
+        }
+        .active{
+            background-color: orange;
+            color: white;
+        }
+        li a:hover:not(.active){
+            background-color: orange;
+            color: white;
+        }
+        .ul-1{
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+            width: 400px;
+            background-color: lightgrey ;
+            border: 1px solid black;
+            background-clip: content-box;
+            overflow: hidden;
+        }
+        .li-1{
+            float: left;
+            border-right: 1px solid blue;
+        }
+        .a-1{
+            display: block;
+            color: blue;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        .a-1:hover{
+            background-color: gray;
+            color: white;
+        }
+        .active1{
+            background-color: gray;
+            color: white;
+        }
+        .a-1:hover:not(.active1){
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <br/>
+    <br/>
+    <table style="border:none" cellspacing="80">
+        <tr>
+            <td>
+                <h2>Vertical Navigation Bar</h2>
+                <ul>
+                    <li><a class="active" href="https://www.w3schools.com/">Home</a></li>
+                    <li><a href="https://www.w3schools.com/java/default.asp">Java</a></li>
+                    <li><a href="https://www.w3schools.com/css/default.asp">CSS</a></li>
+                    <li><a href="https://www.w3schools.com/html/default.asp">HTML</a></li>
+                    <li><a href="https://www.w3schools.com/bootstrap/default.asp">Bootstrap</a></li>
+                </ul>
+        
+            </td>
+            <td>
+                <h2>Horizontal Navigation Bar</h2>
+                <ul class="ul-1">
+                    <li class="li-1"><a class="a-1" class="active1" href="https://www.w3schools.com/">Home</a></li>
+                    <li class="li-1"><a class="a-1" href="https://www.w3schools.com/java/default.asp">Java</a></li>
+                    <li class="li-1"><a class="a-1" href="https://www.w3schools.com/css/default.asp">CSS</a></li>
+                    <li class="li-1"><a class="a-1" href="https://www.w3schools.com/html/default.asp">HTML</a></li>
+                    <li class="li-1"><a class="a-1" href="https://www.w3schools.com/bootstrap/default.asp">Bootstrap</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

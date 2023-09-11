@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Task-7</title>
+    <style>
+        table{
+            border: 1px solid #790834;
+            background-color: #790834;
+            color: white;
+            width: auto;
+            margin: auto;
+            line-height: 30px;
+            padding: 15px 85px;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .button{
+            background-color: lightgray;
+            color: black;
+            border-radius: 5px;
+            padding: 5px 18px;
+            margin: 8px 0;
+            border: none;
+            width: 280%;
+            font-size: large;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .button:hover{
+            opacity: 0.5;
+        }
+    </style>
+    
+</head>
+<body style="background-color: #a70b47;">
+    <form>
+        <br/>
+            <table align="center">
+                <tr>
+                    <td>
+                        <label for="Name">Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="Name" placeholder="your name" /><br/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" placeholder="your email" /><br/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="password">Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" name="password"/><br/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="tel">Phone Number:</label>
+                    </td>
+                    <td>
+                        <input type="tel" name="tel" maxlength="10"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="gender">Gender:</label>
+                    </td>
+                    <td>
+                        <label for="male">Male:</label>
+                        <input type="radio" name="gender" id="male" value="male"/>
+                        <label for="female">Female:</label>
+                        <input type="radio" name="gender" id="female" value="female"/>
+                        <label for="other">Other:</label>
+                        <input type="radio" name="gender" id="other" value="other"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="language">Language</label>
+                    </td>
+                    <td>
+                        <select id="language" value="language">
+                            <option value="Select">Select language</option>
+                            <option value="English">English</option>
+                            <option value="Hindi">Hindi</option>
+                            <option value="Kannada">Kannada</option>
+                            <option value="Telugu">Telugu</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="zipcode">Zip Code:</label>
+                    </td>
+                    <td>
+                        <input type="number" name="zipcode"/><br/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="about">About:</label>
+                    </td>
+                    <td>
+                        <textarea style="height:100px; width:165px;" placeholder="Write about yourself..."></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="button" align="center">Register</div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+</body>
+</html>
